@@ -1,0 +1,79 @@
+span[data-link-title*='P: '] .rm-page-ref,
+span.rm-page-ref[data-tag*='P: '] {
+  background: #ff9d66 !important;
+  color: #fff;
+  padding: 2px 4px;
+  font-weight: 500;
+}
+
+span.rm-page-ref[data-tag='p1'] {
+  background: #fc766f !important;
+  color: #fff !important;
+  padding: 2px 4px;
+  font-weight: 500;
+}
+
+
+span.rm-page-ref[data-tag='p0'] {
+  background: #ee5f85 !important;
+  color: #fff !important;
+  padding: 2px 4px;
+  font-weight: 500;
+}
+
+
+span[data-link-title*='R: '] .rm-page-ref,
+span.rm-page-ref[data-tag*='R: '] {
+  /* Resources */
+  background: #9769ff !important;
+  color: white !important;
+  padding: 2px 4px;
+  font-weight: 500;
+}
+
+
+span[data-link-title*='O: '] .rm-page-ref,
+span.rm-page-ref[data-tag*='O: '] {
+  /* Opinions */
+  background: #81d5ed !important;
+  color: white !important;
+  padding: 2px 4px;
+  font-weight: 500;
+}
+
+span[data-link-title*='Q: '] .rm-page-ref,
+span.rm-page-ref[data-tag*='Q: '] {
+  /* Questions */
+  background: #0dbac6 !important;
+  color: #fff !important;
+  padding: 3px 8px;
+  font-weight: 500;
+}
+
+span[data-link-title*='Z: '] .rm-page-ref,
+span.rm-page-ref[data-tag*='Z: '] {
+  /* Evergreen notes */
+  background: #adcb2a;
+  color: #fff;
+  padding: 2px 4px;
+  font-weight: 500;
+}
+
+span[data-link-title*='A: '] .rm-page-ref,
+span.rm-page-ref[data-tag*='A: '] {
+  /* Article for specific audience */
+  background: #f9c866;
+  color: #fff;
+  padding: 2px 4px;
+  font-weight: 500;
+}
+
+span.rm-page-ref[data-tag='flashcard'] {
+  background: #f3ecff !important;
+  color: #8b53bf !important;
+  border: 1px solid #c5a8e0;
+  border-radius: 3px;
+  padding: 2px 4px;
+  font-weight: 500;
+}
+
