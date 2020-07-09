@@ -1332,3 +1332,20 @@ span.rm-page-ref[data-tag='flashcard'] {
   padding: 2px 4px;
   font-weight: 500;
 }
+
+/* Complex Pages */
+.rm-page-ref-link-color .rm-page-ref-link-color {
+    font-style: italic;
+}
+
+.rm-page-ref-link-color .rm-page-ref-link-color .rm-page-ref-link-color {
+    font-weight: bold;
+}
+
+.rm-page-ref-link-color .rm-page-ref-link-color:hover {
+    text-decoration: overline;
+}
+
+.rm-page-ref-link-color .rm-page-ref-link-color .rm-page-ref-link-color:hover {
+    background-color: rgb(206, 238, 254);
+}
