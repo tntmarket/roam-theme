@@ -43,9 +43,10 @@
   box-shadow: rgba(0, 0, 0, 0.06) 0px 4px 10px 0px !important;
 }
 
-.roam-center {
-  max-width: 740px;
+.__________cytoscape_container {
+  width: 1000px !important;
 }
+
 ::selection {
   background: #8fdcf3ba; /* WebKit/Blink Browsers */
 }
