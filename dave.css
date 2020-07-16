@@ -220,9 +220,6 @@ h1.level2 {
   padding-bottom: 18px !important;
 }
 
-.starred-pages-wrapper > div:first-child {
-  display: none;
-}
 .starred-pages-wrapper .flex-h-box,
 .starred-pages-wrapper .flex-h-box span {
   font-size: 13px !important;
@@ -686,6 +683,15 @@ body,
 /* -------------------------- */
 /*        LEFT SIDEBAR        */
 /* -------------------------- */
+
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .top-row:hover {
+  background-color: transparent !important;
+  color: var(--primary-color) !important;
+}
+
+.rm-db-title-container {
+  display: none !important; /* Username */
+}
 
 /* HIDE LOGO*/
 #roam-sidebar-logo {
