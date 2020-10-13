@@ -19,7 +19,7 @@
 
     --color-primary: 47, 155, 249;
     --color-primary-contrast: #eee;
-    --color-secondary: 228, 78, 244;
+    --color-secondary: 133, 85, 200;
 
     --color-secondary-contrast: #eee;
 }
@@ -63,9 +63,8 @@ span.cm-error { color: #F41000 !important; }
     --page-order: row;
 }
 
-html, body, .roam-app {
+#app, body {
     background-color: var(--bg-color) !important;
-    overflow: hidden !important;
 }
 
 /* hide scrollbars */
@@ -112,7 +111,7 @@ h1.rm-title-display, .rm-title-textarea {
 
 /* dave override */
 a {
-    color: rgb(133, 85, 200);
+    color: rgb(var(--color-secondary));
 }
 /* dave override */
 em {
@@ -131,7 +130,7 @@ textarea {
 h1 > .roam-block, h1 textarea,
 h2 > .roam-block, h2 textarea,
 h3 > .roam-block, h3 textarea {
-    font-weight: 500;
+    font-weight: 600;
 }
 h1 strong,
 h2 strong,
@@ -139,15 +138,13 @@ h3 strong {
     font-weight: 800;
 }
 h1 .roam-block, h1 textarea {
-    font-size: 34px;
-    min-height: 53px;
+    font-size: 30px;
 }
 h2 .roam-block, h2 textarea {
-    font-size: 29px;
-    min-height: 52px;
+    font-size: 24px;
 }
 h3 .roam-block, h3 textarea {
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .bp3-popover {
@@ -229,7 +226,8 @@ h3 .roam-block, h3 textarea {
     width: var(--page-width) !important;
 }
 .roam-article, #all-pages-search, .sidebar-content > * {
-    margin: 50px 0px 100px 0px !important;
+    /* dave override top margin */
+    margin: 30px 0px 100px 0px !important;
     box-sizing: border-box;
     height: auto !important;
     max-width: var(--page-width);
@@ -1788,4 +1786,5 @@ span.rm-page-ref[data-tag='p0'] {
   background: #ff5683 !important;
   color: var(--white) !important;
 }
+
 
