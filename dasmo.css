@@ -658,7 +658,6 @@ h3 .roam-block, h3 textarea {
 /* hovering search bar in this mode == hovering icon itself */
 /* we must however have the search bar in front of the icon (but invisible) so that it can focus on click */
 /* very hacky :P */
-.roam-block-container .bp3-elevation-3,
 .rm-find-or-create-wrapper[style*="200px"]:hover .bp3-icon-search, .roam-topbar .bp3-icon-search:hover {
     background-color: rgba(var(--color-primary), 0.4);
     color: var(--text-color) !important;
@@ -829,19 +828,25 @@ body > .bp3-portal .bp3-text-small {
     color: rgb(var(--color-primary)) !important;
 }
 
-.bp3-elevation-3 {
+
+.roam-block-container .bp3-elevation-3 {
     background: var(--page-color) !important;
 }
 
 /* selected search result */
 /* dave override move style earlier */
-.bp3-elevation-3 [style*="background"].dont-unfocus-block,
 .rm-find-or-create-wrapper [style*="background"].rm-menu-item {
     background-color: rgb(65, 65, 65) !important;
 }
 
+/* shadow on regular search */
+.bp3-overlay-open .bp3-popover {
+    box-shadow: 0px 0 2px 2px rgb(0 0 0 / 0.6), 0 2px 4px rgb(0 0 0 / 0%), 0 8px 24px rgb(16 22 26 / 0%)
+}
+
 /* search results highlighted words */
 /* [style*="yellow"] */
+.roam-block-container [style*="background"].dont-unfocus-block,
 .rm-search-list-item > span > span {
     background-color: rgba(var(--color-primary), 0.4) !important;
     color: var(--text-color);
@@ -1490,6 +1495,10 @@ b, strong {
 
 .roam-log-container .roam-log-page {
     border-top: 1px solid #444;
+}
+
+.rm-inline-references {
+    background: var(--page-color);
 }
 
 /* Scroll per card */
