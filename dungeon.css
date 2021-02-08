@@ -1061,8 +1061,7 @@ code { /* dave override */
     line-height: 0.5;
 }
 
-.block-border-left {
-    /* dave override */
+.rm-multibar {
     border-color: var(--bullet-color);
 }
 
