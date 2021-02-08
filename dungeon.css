@@ -1030,9 +1030,9 @@ body > .bp3-portal .bp3-text-small {
 /* CHECKBOX */
 
 .check-container {
-    padding-right: 2px;
+    margin-right: 2px;
     vertical-align: text-bottom;
-    top: -5px;
+    top: -3px;
 }
 
 .check-container .checkmark {
@@ -1575,7 +1575,5 @@ span.rm-page-ref[data-tag='p0'] {
 .roam-toolkit--panel::-webkit-scrollbar-thumb {
     width: 3px !important;
     background: rgba(255, 255, 255, 0.25);
-
 }
-
 
