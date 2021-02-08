@@ -401,12 +401,12 @@ h3 .roam-block, h3 textarea {
 }
 
 /* fix positioning problems with menu icon */
-.roam-topbar *[class*="icon-menu"]::before {
+.rm-topbar *[class*="icon-menu"]::before {
     position: absolute !important;
     top: 4px !important;
     left: 4px !important;
 }
-.roam-topbar .bp3-icon-menu-open::before {
+.rm-topbar .bp3-icon-menu-open::before {
     content: ""; /* prevent menu icon from changing on hover */
 }
 
@@ -525,22 +525,24 @@ h3 .roam-block, h3 textarea {
 }
 
 
-.roam-topbar {
+.rm-topbar {
     opacity: 1 !important;
     background-color: transparent !important;
 
     margin-top: 70px;
+    height: auto;
     width: 20px;
     display: inline-block;
     padding-left: 0 !important;
     position: sticky !important;
 
-    left: 0px;
+    left: 15px;
     transition: none !important;
     z-index: 999;
 
     border: none !important;
 }
+
 .roam-sidebar-container > .roam-sidebar-content::before {
     content: "";
     position: absolute;
@@ -548,7 +550,7 @@ h3 .roam-block, h3 textarea {
     width: 400px;
     height: 100vh;
     background: var(--bg-color) !important;
-    opacity: 0.7;
+    opacity: 0.65;
     z-index: -1;
 }
 
@@ -605,34 +607,6 @@ h3 .roam-block, h3 textarea {
     top: 5px;
 }
 
-.roam-topbar > .rm-files-dropzone > .flex-h-box {
-    width: 50px;
-    flex-direction: column;
-    height: 1px !important;
-    align-items: start !important;
-    text-align: center;
-
-    position: -webkit-sticky !important;
-    position: sticky !important;
-    left: 0px;
-}
-.roam-topbar > .rm-files-dropzone > .flex-h-box > * {
-    flex: 0 0 20px !important;
-    margin: auto !important;
-    max-width: 20px !important;
-    max-height: 20px !important;
-}
-.roam-topbar > .rm-files-dropzone > div >.bp3-button:first-child {
-    align-self: start !important;
-    position: fixed !important;
-    left: 16px;
-    top: 78px;
-    z-index: 9999999 !important;
-}
-.roam-topbar > .rm-files-dropzone > div > *:nth-child(2) {
-    margin-top: 20px !important;
-}
-
 .rm-reference-item {
     /* dave override */
     background-color: transparent !important;
@@ -658,7 +632,7 @@ h3 .roam-block, h3 textarea {
 
 /* SOME BLACKMAGIC TO GET SEARCH ICON TO FUNCTION LIKE OTHER BUTTONS */
 
-.roam-topbar .bp3-icon-search {
+.rm-topbar .bp3-icon-search {
     padding: 4px;
     border-radius: 3px;
     margin: 0 !important;
@@ -669,16 +643,18 @@ h3 .roam-block, h3 textarea {
 /* hovering search bar in this mode == hovering icon itself */
 /* we must however have the search bar in front of the icon (but invisible) so that it can focus on click */
 /* very hacky :P */
-.rm-find-or-create-wrapper[style*="200px"]:hover .bp3-icon-search, .roam-topbar .bp3-icon-search:hover {
+.rm-find-or-create-wrapper[style*="200px"]:hover .bp3-icon-search, .rm-topbar .bp3-icon-search:hover {
     background-color: rgba(var(--color-primary), 0.4);
     color: var(--text-color) !important;
 }
-.roam-topbar .bp3-icon-search svg { padding: 1px; }
+.rm-topbar .bp3-icon-search svg { padding: 1px; }
 /* fix centering on calendar icon */
-.roam-topbar .bp3-icon-calendar { margin: 0 !important }
+.rm-topbar .bp3-icon-calendar { margin: 0 !important }
 
 .rm-find-or-create-wrapper {
     width: 20px !important;
+    height: 30px !important;
+    margin-top: 3px;
 }
 .rm-find-or-create-wrapper .bp3-overlay {
     position: fixed;
@@ -1272,8 +1248,8 @@ code { /* dave override */
 
 /* fix specific popover sizes and positions... */
 
-.roam-topbar .bp3-popover-wrapper:nth-child(6) .bp3-popover,
-.roam-topbar .bp3-popover-wrapper:nth-child(7) .bp3-popover{
+.rm-topbar .bp3-popover-wrapper:nth-child(6) .bp3-popover,
+.rm-topbar .bp3-popover-wrapper:nth-child(7) .bp3-popover{
     width: 600px;
     max-width: calc(100vw - 20px);
 }
@@ -1290,7 +1266,7 @@ code { /* dave override */
 
 
 @media only screen and (max-width: 600px) {
-    .roam-topbar {
+    .rm-topbar {
         margin: 0px !important;
         padding: 10px 0px 0px 0px !important;
         width: 100%;
@@ -1300,7 +1276,7 @@ code { /* dave override */
         left: 0px;
         backdrop-filter: blur(5px);
     }
-    .roam-topbar::before {
+    .rm-topbar::before {
         content: "";
         position: absolute;
         top: 0; left: 0;
@@ -1309,7 +1285,7 @@ code { /* dave override */
         opacity: 0.7;
 
     }
-    .roam-topbar > .flex-h-box {
+    .rm-topbar > .flex-h-box {
         flex-direction: row;
         height: 1px !important;
         align-items: start !important;
@@ -1324,7 +1300,7 @@ code { /* dave override */
         margin: auto;
         justify-content: space-evenly;
     }
-    .roam-topbar > div >.bp3-button:first-child {
+    .rm-topbar > div >.bp3-button:first-child {
         position: static !important;
     }
 
@@ -1371,7 +1347,7 @@ code { /* dave override */
             margin: 30px 10px 5px 30px !important;
     }
 
-    .roam-topbar > div > *:nth-child(2) {
+    .rm-topbar > div > *:nth-child(2) {
         margin-top: 0 !important;
     }
 
