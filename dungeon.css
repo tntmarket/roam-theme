@@ -333,9 +333,17 @@ h3 .roam-block, h3 textarea {
 }
 
 /* dave override */
+#right-sidebar .rm-sidebar-outline-wrapper {
+    margin-left: -12px;
+}
+
+#right-sidebar .rm-sidebar-window__controls {
+    left: 28px;
+    top: -28px;
+}
+
 .window-headers {
-    margin-top: -44px;
-    padding: 0px 24px 58px 60px;
+    padding: 0 0 58px 30px;
 }
 .window-headers .bp3-button {
     color: var(--icon-color) !important;
@@ -346,7 +354,7 @@ h3 .roam-block, h3 textarea {
 
 .window-headers > * {
     position: relative;
-    top: 56px;
+    top: 26px;
     right: 12px;
 }
 
@@ -1575,4 +1583,3 @@ span.rm-page-ref[data-tag='p0'] {
     width: 3px !important;
     background: rgba(255, 255, 255, 0.25);
 }
-
