@@ -264,7 +264,7 @@ h3 .roam-block, h3 textarea {
 /* -------------------------- */
 
 .roam-article > div {
-    padding: 20px 20px 30px 30px;
+    padding: 20px 16px 30px 30px;
     background: var(--page-color);
     border-radius: 10px;
 }
@@ -1094,10 +1094,13 @@ span.rm-page-ref[data-tag='p0'] {
 }
 
 .roam-toolkit--panel::-webkit-scrollbar {
-    width: 3px !important;
+    width: 6px !important;
     background: transparent !important; /* Chrome/Safari/Webkit */
 }
 .roam-toolkit--panel::-webkit-scrollbar-thumb {
-    width: 3px !important;
-    background: rgba(255, 255, 255, 0.25);
+    width: 6px !important;
+    background: rgba(255, 255, 255, 0.15);
+}
+.roam-toolkit--panel::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.35);
 }
