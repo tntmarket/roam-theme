@@ -264,7 +264,7 @@ h3 .roam-block, h3 textarea {
 /* -------------------------- */
 
 .roam-article > div {
-    padding: 20px 16px 30px 30px;
+    padding: 20px 20px 30px 30px;
     background: var(--page-color);
     border-radius: 10px;
 }
