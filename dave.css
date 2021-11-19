@@ -253,7 +253,6 @@ h3 .roam-block, h3 textarea {
     padding: 0 !important;
 }
 .roam-article, #all-pages-search, .sidebar-content > * {
-    /* dave override top margin */
     margin: 30px 0px 100px 0px !important;
     box-sizing: border-box;
     height: auto !important;
@@ -539,7 +538,6 @@ h3 .roam-block, h3 textarea {
 }
 
 .rm-reference-item {
-    /* dave override */
     background-color: transparent !important;
     padding: 0 !important;
     font-size: 13px !important;
@@ -548,7 +546,20 @@ h3 .roam-block, h3 textarea {
     background-color: var(--page-color)
 }
 
-/* dave override */
+/* -------------------------- */
+/*         REFERENCES         */
+/* -------------------------- */
+
+.bp3-button[title="Convert all instances of this word or phrase into a link to this page"],
+.bp3-button[title="Convert the text matching this page to a link to the page"] {
+    color: var(--icon-color) !important;
+    padding: 0px 7px !important;
+    min-height: 24px;
+}
+.bp3-button[title="Convert the text matching this page to a link to the page"] {
+    margin-right: 6px;
+}
+
 .rm-ref-page-view {
     background-color: #ffffff0a;
     padding: 12px 0px;
@@ -833,7 +844,7 @@ blockquote {
     opacity: 0.5;
 }
 
-code { /* dave override */
+code {
     background: #ffffff1c;
     border: none;
     color: var(--text-color);
@@ -924,7 +935,6 @@ code { /* dave override */
     left: 10px !important;
 }
 
-/* ROAM dave start */
 .rm-page-ref .rm-page-ref {
     font-style: italic;
 }
